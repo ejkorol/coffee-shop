@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../scss/menu.css" />
 
     <title>Coffee Shop - Menu</title>
   </head>
+
   <body>
+
     <!-- NAVBAR -->
     <header class="header">
       <nav class="navbar">
+
         <div class="navbar__left">
           <figure class="navbar__image">
-            <img class="navbar__logo" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee beans" />
+            <img class="navbar__logo" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee beans"/>
           </figure>
           <h3 class="navbar__header">nitro</h3>
         </div>
+
         <div class="navbar__right">
           <ul class="navbar__menu">
             <li class="navbar__item"><a class="navbar__link" href="#">about</a></li>
@@ -29,111 +30,118 @@
             <li class="navbar__item"><a class="navbar__link navbar__link--active" href="#">shop now</a></li>
           </ul>
         </div>
+
       </nav>
     </header>
 
     <main>
+
       <!-- HERO -->
       <section class="hero">
         <div class="hero__container">
-          <h1 class="hero__title">menu</h1>
+          <h1 class="hero__header">menu</h1>
         </div>
       </section>
 
       <!-- CATEGORIES -->
       <section class="categories">
         <ul class="categories__list">
-          <li class="categories__item"><a class="categories__link" href="#">hot drinks</a></li>
-          <li class="categories__item"><a class="categories__link" href="#">cold drinks</a></li>
-          <li class="categories__item"><a class="categories__link" href="#">pastries</a></li>
+          <li class="categories__item"><a class="categories__link" href="#hot-drinks">hot drinks</a></li>
+          <li class="categories__item"><a class="categories__link" href="#cold-drinks">cold drinks</a></li>
+          <li class="categories__item"><a class="categories__link" href="#pastries">pastries</a></li>
         </ul>
       </section>
 
       <!-- HOT DRINKS -->
-      <section class="section section--nitro-pink">
-        <h2 class="section__title">hot drinks</h2>
+      <section class="section section--nitro-pink" id="hot-drinks">
+        <h2 class="section__header">hot drinks</h2>
 
-        <article class="productCard">
-          <h3 class="productCard__title">in-house brew</h3>
-          <div class="productCard__content">
-            <p class="text--italic">
-              Our in-house medium roast is aclassic balance between sweet
-              vanilla, nuty hazelnut, and asmooth low acidity ot bring
-              everything together.
-            </p>
+        <article class="card">
+          <div class="card__top">
+            <h3 class="card__header">in-house brew</h3>
           </div>
-          <p class="text--nitroBlue">$2.99</p>
+          <div class="card__content">
+            <p class="card__text">Our in-house medium roast is aclassic balance between sweet vanilla, nuty hazelnut, and asmooth low acidity to bring everything together.</p>
+          </div>
+          <div class="card__bottom">
+            <p class="card__text--nitro-blue">$2.99</p>
+          </div>
         </article>
 
-        <article class="productCard">
-          <h3 class="productCard__title">espresso</h3>
-          <div class="productCard__content">
-            <p class="text--italic">
-              A balance between bold and smooth, powerful and sweet, our
-              signature espresso blend si a complex flavor profile. It features
-              strong notes of semi-sweet chocolate and caramel, with mild
-              acidity and a bright floral finish.
-            </p>
+        <article class="card">
+          <div class="card__top">
+            <h3 class="card__header">espresso</h3>
           </div>
-          <p class="text--nitroBlue">$4.99</p>
+          <div class="card__content">
+            <p class="card__text">A balance between bold and smooth, powerful and sweet, our signature espresso blend si a complex flavor profile. It features strong notes of semi-sweet chocolate and caramel, with mild acidity and a bright floral finish.</p>
+          </div>
+          <div class="card__bottom">
+            <p class="card__text--nitro-blue">$4.99</p>
+          </div>
         </article>
       </section>
 
       <!-- COLD DRINKS -->
-      <section class="section section--light-gray">
-        <h2 class="section__title">cold drinks</h2>
+      <section class="section section--light-gray" id="cold-drinks">
+        <h2 class="section__header">cold drinks</h2>
 
-        <article class="productCard">
-          <h3 class="productCard__title">cold brew</h3>
-          <div class="productCard__content">
-            <p class="text--italic">
-              Our bright and delicious coffee blend, brewed over ice ot give you
-              acold coffee freshness with al the flavor of our amazing in-house
-              coffee.
-            </p>
+        <article class="card">
+          <div class="card__top">
+            <h3 class="card__header">cold brew</h3>
           </div>
-          <p class="text--nitroBlue">$3.99</p>
+          <div class="card__content">
+            <p class="card__text">Our bright and delicious coffee blend, brewed over ice ot give you a cold coffee freshness with al the flavor of our amazing in-house coffee.</p>
+          </div>
+          <div class="card__bottom">
+            <p class="card__text--nitro-blue">$3.99</p>
+          </div>
         </article>
 
-        <article class="productCard">
-          <h3 class="productCard__title">iced chai latte</h3>
-          <div class="productCard__content">
-            <p class="text--italic">
-              A creamy drink with a kick, this drink features spicy chai tea
-              blended with your choice of milk and poured over ice.
-            </p>
+        <article class="card">
+          <div class="card__top">
+            <h3 class="card__header">iced chai latte</h3>
           </div>
-          <p class="text--nitroBlue">$6.99</p>
+          <div class="card__content">
+            <p class="card__text">A creamy drink with a kick, this drink features spicy chai tea blended with your choice of milk and poured over ice.</p>
+          </div>
+          <div class="card__bottom">
+            <p class="card__text--nitro-blue">$6.99</p>
+          </div>
         </article>
       </section>
 
       <!-- PASTRIES -->
-      <section class="section section--nitro-pink">
-        <h2 class="section__title">pastries</h2>
+      <section class="section section--nitro-pink" id="pastries">
+        <h2 class="section__header">pastries</h2>
 
-        <article class="productCard">
-          <h3 class="productCard__title">bacon oatmeal raisin cookie</h3>
-          <div class="productCard__content">
-            <p class="text--italic">
-              An infused bacon, sugar and egg mixture si folded into a perfect
-              blend of oats, flour, raisins and cinnamon ot create a soft and
-              chewy textured cookie.
-            </p>
+        <article class="card">
+          <div class="card__top">
+            <h3 class="card__header">bacon oatmeal raisin cookie</h3>
           </div>
-          <p class="text--nitroBlue">$3.50</p>
+          <div class="card__content">
+            <p class="card__text">An infused bacon, sugar and egg mixture is folded into a perfect blend of oats, flour, raisins and cinnamon ot create a soft and chewy textured cookie.</p>
+          </div>
+          <div class="card__bottom">
+            <p class="card__text--nitro-blue">$3.50</p>
+          </div>
         </article>
 
-        <article class="productCard">
-          <h3 class="productCard__title">blueberry, lemon and thyme muffin</h3>
-          <div class="productCard__content">
-            <p class="text--italic">
-              Tart and sweet, this classic blueberry and lemon combination comes
-              with an earthy twist.
-            </p>
+        <article class="card">
+          <div class="card__top">
+            <h3 class="card__header">blueberry, lemon and thyme muffin</h3>
           </div>
-          <p class="text--nitroBlue">$2.50</p>
+          <div class="card__content">
+            <p class="card__text">Tart and sweet, this classic blueberry and lemon combination comes with an earthy twist.</p>
+          </div>
+          <div class="card__bottom">
+            <p class="card__text--nitro-blue">$2.50</p>
+          </div>
         </article>
+
       </section>
+
     </main>
+
   </body>
+
 </html>
