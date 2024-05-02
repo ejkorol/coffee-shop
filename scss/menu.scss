@@ -1,0 +1,10 @@
+/* VARIABLES */
+@use "./partials/globals";
+
+/* TYPOGRAPHY */
+@use "./partials/typography";
+
+/* COMPONENTS */
+@use "./partials/components/navbar";
+@use "./partials/components/footer";
+@use "./partials/components/buttons";
