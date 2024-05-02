@@ -1,7 +1,6 @@
 @use "./globals" as *;
 @use "./typography";
 
-/* NAVBAR */
 .navbar {
   background-color: $nitro-pink;
   display: flex;
@@ -28,14 +27,17 @@
     .navbar__menu {
       list-style: none;
       display: flex;
-      gap: 5%;
+      gap: 2.5rem;
       margin: 0;
       padding: 0;
       .navbar__item {
         display: flex;
         align-items: center;
         .navbar__link {
-          text-decoration: none;
+          @include typography.navbarLink;
+        }
+        .navbar__link--active {
+          color: $nitro-blue;
         }
       }
     }
