@@ -4,4 +4,13 @@
   font-size: $size;
   font-weight: $weight;
   color: $color;
+  text-decoration: none;
+}
+
+@mixin navbarLink($size: $interactive, $weight: $font-regular, $color: $graphite) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  text-decoration: none;
+  text-transform: uppercase;
 }
