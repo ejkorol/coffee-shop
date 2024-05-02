@@ -30,7 +30,7 @@
     width: 18.75rem;
     height: 12.5rem;
 
-    .hero__title {
+    .hero__header {
       @include typography.headerOne;
       color: $light;
     }
@@ -79,10 +79,10 @@
   justify-content: center;
   align-items: center;
 
-.section__title {
-  @include typography.headerTwo;
-  text-transform: capitalize;
-}
+  .section__header {
+    @include typography.headerTwo;
+    text-transform: capitalize;
+  }
 }
 .section--nitro-pink {
   background-color: $nitro-pink;
@@ -92,25 +92,42 @@
   background-color: $light-gray;
 }
 
-
 /* ************************* */
-/*        PRODUCT CARD       */
+/*          CARDS            */
 /* ************************* */
-.productCard {
-  width: 100%;
-  text-align: center;
-}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+  margin-top: 2.5rem;
 
-.productCard__title {
-  text-transform: capitalize;
-}
-
-.productCard__content {
-  width: 30%;
-  text-align: center;
-  margin: auto;
-}
-
-.productCard p {
-  margin-bottom: 0;
+  .card__top {
+    display: flex;
+    justify-content: center;
+    .card__header {
+      @include typography.headerThree;
+      text-align: center;
+    }
+  }
+  .card__content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.25rem 0;
+    .card__text {
+      @include typography.paragraph;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+  .card__bottom {
+    display: flex;
+    justify-content: center;
+    .card__text--nitro-blue {
+      @include typography.paragraph;
+      color: $nitro-blue;
+      text-align: center;
+    }
+  }
 }
