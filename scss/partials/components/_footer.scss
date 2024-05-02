@@ -1,0 +1,25 @@
+/* ************************* */
+/*          FOOTER           */
+/* ************************* */
+.footer {
+  background-color: #FFF0ED;
+  text-align: center;
+}
+
+.footer__section {
+  display: inline-block;
+  margin: 1.25rem 2.5rem;
+  text-align: left;
+}
+
+.footer__heading {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 2.063rem;
+  color: #393939;
+  text-transform: capitalize;
+}
+
+.footer__logo {
+  width: 3.125rem;
+}

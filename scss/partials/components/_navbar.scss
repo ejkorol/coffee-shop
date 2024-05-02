@@ -1,0 +1,50 @@
+/* ************************* */
+/*          NAVBAR           */
+/* ************************* */
+.navbar {
+  padding: 1.25rem 2.5rem;
+}
+.navbar > * {
+  vertical-align: middle;
+}
+
+.navbar__title {
+  display: inline-block;
+  margin: none;
+  padding: none;
+}
+.navbar__title a {
+  text-decoration: none;
+  color: #393939;
+  display: inline-block;
+}
+
+.navbar__logo {
+  width: 3.125rem; 
+  display: inline-block;
+}
+
+.navbar__navList {
+  display: inline-block;
+}
+.navbar__link {
+  list-style: none;
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+.navbar__link a {
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.313rem;
+  color: #393939;
+  text-decoration: none;
+}
+
+.navbar__link a:active {
+  color: blue;
+}
+
+.navbar--nitroPink {
+  background-color: #FFF0ED;
+}
