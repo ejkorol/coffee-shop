@@ -1,0 +1,154 @@
+/* ************************* */
+/*        BODY + HTML        */
+/* ************************* */
+html {
+  width: 100%;
+}
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ************************* */
+/*        TYPOGRAPHY         */
+/* ************************* */
+h1, h2 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 3.75rem;
+  color: #393939;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 2.06rem;
+  color: #393939;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #393939;
+}
+
+.text--white {
+  color: #ffffff;
+}
+
+.text--nitroBlue {
+  color: #5BACC3;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--bold {
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* ************************* */
+/*          BUTTONS          */
+/* ************************* */
+.button {
+  display: block;
+  padding: none;
+  background-color: #5BACC3;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.313rem;  
+  width: 11.25rem;
+  padding: 1.25rem;
+}
+.button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.313rem;  
+  color: #ffffff;
+}
+
+/* ************************* */
+/*          NAVBAR           */
+/* ************************* */
+.navbar {
+  padding: 1.25rem 2.5rem;
+}
+.navbar > * {
+  vertical-align: middle;
+}
+
+.navbar__title {
+  display: inline-block;
+  margin: none;
+  padding: none;
+}
+.navbar__title a {
+  text-decoration: none;
+  color: #393939;
+  display: inline-block;
+}
+
+.navbar__logo {
+  width: 3.125rem; 
+  display: inline-block;
+}
+
+.navbar__navList {
+  display: inline-block;
+}
+.navbar__link {
+  list-style: none;
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+.navbar__link a {
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.313rem;
+  color: #393939;
+  text-decoration: none;
+}
+
+.navbar__link a:active {
+  color: blue;
+}
+
+.navbar--nitroPink {
+  background-color: #FFF0ED;
+}
+
+/* ************************* */
+/*          FOOTER           */
+/* ************************* */
+.footer {
+  background-color: #FFF0ED;
+  text-align: center;
+}
+
+.footer__section {
+  display: inline-block;
+  margin: 1.25rem 2.5rem;
+  text-align: left;
+}
+
+.footer__heading {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 2.063rem;
+  color: #393939;
+  text-transform: capitalize;
+}
+
+.footer__logo {
+  width: 3.125rem;
+}
