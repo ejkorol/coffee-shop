@@ -32,3 +32,20 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+@mixin headerThree($size: $heading-three, $weight: $font-light, $color: $graphite) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+@mixin paragraph($size: $paragraph, $weight: $font-regular, $color: $graphite) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  text-decoration: none;
+  margin: 0;
+}
