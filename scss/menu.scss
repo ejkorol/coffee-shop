@@ -23,6 +23,7 @@
   align-items: center;
 
   .hero__container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,9 +31,21 @@
     width: 18.75rem;
     height: 12.5rem;
 
-    .hero__header {
-      @include typography.headerOne;
-      color: $light;
+    .hero-container-outline {
+      position: absolute;
+      border: 5px solid $nitro-blue;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate(-20px, -20px);
+      z-index: 1;
+
+      .hero__header {
+        @include typography.headerOne;
+        color: $light;
+      }
     }
   }
 }
