@@ -1,5 +1,5 @@
 /* VARIABLES */
-@use "./partials/globals";
+@use "./partials/globals" as *;
 
 /* TYPOGRAPHY */
 @use "./partials/typography";
@@ -18,55 +18,55 @@
   background-size: cover;
   width: 100%;
   height: 43.75rem;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.hero__container {
-  text-align: center;
-  background-color: #393939;
-  width: 18.75rem;
-  height: 12.5rem;
-  margin: 0 auto;
-}
+  .hero__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $graphite;
+    width: 18.75rem;
+    height: 12.5rem;
 
-.hero__title-isLight {
-  color: #ffffff;
-  text-transform: uppercase;
-  margin: 0;
+    .hero__title {
+      @include typography.headerOne;
+      color: $light;
+    }
+  }
 }
 
 /* ************************* */
 /*        CATEGORIES         */
 /* ************************* */
 .categories {
-  background-color: #393939;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $graphite;
   height: 5rem;
-}
 
-.categories__list {
-  margin: 0;
-  /* this is probably cheating LOL */
-  transform: translateY(-50%);
-  position: relative;
-  top: 50%;
-}
+  .categories__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
 
-.categories__item {
-  list-style: none;
-  border-style: solid;
-  border-width: 0 0 0 0.25rem;
-  border-color: #5BACC5;
-  display: inline-block;
-  padding: 0 1.25rem;
-}
-.categories__item a {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 1.125rem;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
+    .categories__item {
+      list-style: none;
+      border-style: solid;
+      border-width: 0 0 0 0.25rem;
+      border-color: $nitro-blue;
+      padding: 0 1.25rem;
+
+      .categories__link {
+        @include typography.navbarLink;
+        color: $light;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 /* ************************* */
@@ -74,20 +74,24 @@
 /* ************************* */
 .section {
   padding: 2.5rem 0;
-}
-.section--nitroPink {
-  background-color: #FFF0ED;
-}
-
-.section--lightGray {
-  background-color: #F7F7F7;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 .section__title {
+  @include typography.headerTwo;
   text-transform: capitalize;
-  text-align: center;
-  margin: 0;
 }
+}
+.section--nitro-pink {
+  background-color: $nitro-pink;
+}
+
+.section--light-gray {
+  background-color: $light-gray;
+}
+
 
 /* ************************* */
 /*        PRODUCT CARD       */

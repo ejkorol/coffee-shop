@@ -1,55 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../scss/menu.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../scss/menu.css" />
 
     <title>Coffee Shop - Menu</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__left">
+          <figure class="navbar__image">
+            <img class="navbar__logo" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee beans" />
+          </figure>
+          <h3 class="navbar__header">nitro</h3>
+        </div>
+        <div class="navbar__right">
+          <ul class="navbar__menu">
+            <li class="navbar__item"><a class="navbar__link" href="#">about</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">menu</a></li>
+            <li class="navbar__item"><a class="navbar__link navbar__link--active" href="#">shop now</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar navbar--nitroPink">
-      <a href="../index.html"><img class="navbar__logo" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo" /></a>
-      <h3 class="navbar__title"><a href="../index.html">nitro</a></h3>
-      <ul class="navbar__navList">
-        <li class="navbar__link"><a href="../index.html">about</a></li>
-        <li class="navbar__link"><a href="./menu.html">menu</a></li>
-        <li class="navbar__link"><a class="isActive" href="./menu.html">shop now</a></li>
-      </ul> 
-    </nav>
-  </header>    
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">menu</h1>
+        </div>
+      </section>
 
-  <main>
+      <!-- CATEGORIES -->
+      <section class="categories">
+        <ul class="categories__list">
+          <li class="categories__item"><a class="categories__link" href="#">hot drinks</a></li>
+          <li class="categories__item"><a class="categories__link" href="#">cold drinks</a></li>
+          <li class="categories__item"><a class="categories__link" href="#">pastries</a></li>
+        </ul>
+      </section>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__container">
-        <h1 class="hero__title-isLight">menu</h1>
-      </div>
-    </section> 
-
-    <!-- CATEGORIES -->
-    <section class="categories">
-      <ul class="categories__list">
-        <li class="categories__item"><a href="#">hot drinks</a></li>
-        <li class="categories__item"><a href="#">cold drinks</a></li>
-        <li class="categories__item"><a href="#">pastries</a></li>
-      </ul>
-    </section>
-
-    <!-- HOT DRINKS -->
-    <section class="section section--nitroPink">
-      <h2 class="section__title">hot drinks</h2> 
+      <!-- HOT DRINKS -->
+      <section class="section section--nitro-pink">
+        <h2 class="section__title">hot drinks</h2>
 
         <article class="productCard">
           <h3 class="productCard__title">in-house brew</h3>
           <div class="productCard__content">
-            <p class="text--italic">Our in-house medium roast is aclassic balance between sweet vanilla, nuty hazelnut, and asmooth low acidity ot bring everything together.</p>
+            <p class="text--italic">
+              Our in-house medium roast is aclassic balance between sweet
+              vanilla, nuty hazelnut, and asmooth low acidity ot bring
+              everything together.
+            </p>
           </div>
           <p class="text--nitroBlue">$2.99</p>
         </article>
@@ -57,20 +68,29 @@
         <article class="productCard">
           <h3 class="productCard__title">espresso</h3>
           <div class="productCard__content">
-            <p class="text--italic">A balance between bold and smooth, powerful and sweet, our signature espresso blend si a complex flavor profile. It features strong notes of semi-sweet chocolate and caramel, with mild acidity and a bright floral finish.</p>
+            <p class="text--italic">
+              A balance between bold and smooth, powerful and sweet, our
+              signature espresso blend si a complex flavor profile. It features
+              strong notes of semi-sweet chocolate and caramel, with mild
+              acidity and a bright floral finish.
+            </p>
           </div>
           <p class="text--nitroBlue">$4.99</p>
         </article>
-    </section>
+      </section>
 
-    <!-- COLD DRINKS -->
-    <section class="section section--lightGray">
-      <h2 class="section__title">cold drinks</h2> 
+      <!-- COLD DRINKS -->
+      <section class="section section--light-gray">
+        <h2 class="section__title">cold drinks</h2>
 
         <article class="productCard">
           <h3 class="productCard__title">cold brew</h3>
           <div class="productCard__content">
-            <p class="text--italic">Our bright and delicious coffee blend, brewed over ice ot give you acold coffee freshness with al the flavor of our amazing in-house coffee.</p>
+            <p class="text--italic">
+              Our bright and delicious coffee blend, brewed over ice ot give you
+              acold coffee freshness with al the flavor of our amazing in-house
+              coffee.
+            </p>
           </div>
           <p class="text--nitroBlue">$3.99</p>
         </article>
@@ -78,20 +98,27 @@
         <article class="productCard">
           <h3 class="productCard__title">iced chai latte</h3>
           <div class="productCard__content">
-            <p class="text--italic">A creamy drink with a kick, this drink features spicy chai tea blended with your choice of milk and poured over ice.</p>
+            <p class="text--italic">
+              A creamy drink with a kick, this drink features spicy chai tea
+              blended with your choice of milk and poured over ice.
+            </p>
           </div>
           <p class="text--nitroBlue">$6.99</p>
         </article>
-    </section>
+      </section>
 
-    <!-- PASTRIES -->
-    <section class="section section--nitroPink">
-      <h2 class="section__title">pastries</h2> 
+      <!-- PASTRIES -->
+      <section class="section section--nitro-pink">
+        <h2 class="section__title">pastries</h2>
 
         <article class="productCard">
           <h3 class="productCard__title">bacon oatmeal raisin cookie</h3>
           <div class="productCard__content">
-            <p class="text--italic">An infused bacon, sugar and egg mixture si folded into a perfect blend of oats, flour, raisins and cinnamon ot create a soft and chewy textured cookie.</p>
+            <p class="text--italic">
+              An infused bacon, sugar and egg mixture si folded into a perfect
+              blend of oats, flour, raisins and cinnamon ot create a soft and
+              chewy textured cookie.
+            </p>
           </div>
           <p class="text--nitroBlue">$3.50</p>
         </article>
@@ -99,13 +126,14 @@
         <article class="productCard">
           <h3 class="productCard__title">blueberry, lemon and thyme muffin</h3>
           <div class="productCard__content">
-            <p class="text--italic">Tart and sweet, this classic blueberry and lemon combination comes with an earthy twist.</p>
+            <p class="text--italic">
+              Tart and sweet, this classic blueberry and lemon combination comes
+              with an earthy twist.
+            </p>
           </div>
           <p class="text--nitroBlue">$2.50</p>
         </article>
-    </section>
-
-  </main>
-
-</body>
+      </section>
+    </main>
+  </body>
 </html>
