@@ -8,3 +8,90 @@
 @use "./partials/components/navbar";
 @use "./partials/components/footer";
 @use "./partials/components/buttons";
+
+/* ************************* */
+/*          HERO             */
+/* ************************* */
+.hero {
+  background-color: #FFF0ED;
+  padding: 1.25rem 5rem;
+  /* this is just the easiest way */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__image {
+  width: 19rem;
+}
+
+.hero__header {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.hero__content {
+  width: 25%;
+}
+
+/* ************************* */
+/*          CARD             */
+/* ************************* */
+.card {
+  display: inline-block;
+  padding: 2.5rem;
+  height: 27.5rem;
+  width: 20.625rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 5px 9px -1px #00000040;
+  text-align: center;
+  margin: 1.25rem 2.5rem;
+  background-color: #ffffff;
+}
+
+.card__image {
+  height: 17.5rem;
+}
+
+.card h3 {
+  text-transform: capitalize;
+}
+
+/* ************************* */
+/*      PRODUCT SECTION      */
+/* ************************* */
+.productSection {
+  background-color: #F7F7F7;
+  width: 100%;
+  padding: 2.25rem 0;
+  text-align: center;
+}
+.productSection__title {
+  text-transform: capitalize;
+  margin: 0;
+}
+.productSection button {
+  margin: 2.5rem 0rem;
+  display: inline-block;
+}
+
+/* ************************* */
+/*          DISCOUNT         */
+/* ************************* */
+.discountSection {
+  background-color: #393939;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  vertical-align: middle;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.discountSection__text {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 2.813rem;
+  margin: 0;
+}
