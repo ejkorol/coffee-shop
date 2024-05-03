@@ -110,7 +110,7 @@
   background-color: $light-gray;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 2.25rem 0;
 
@@ -121,7 +121,7 @@
   }
 
     .products-button {
-      width: 11.25rem;
+      width: fit-content;
       display: relative;
       background-color: $nitro-blue;
       .products-button__content {
@@ -140,6 +140,76 @@
 /* ************************* */
 /*      ABOUT SECTION        */
 /* ************************* */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem;
+  background-color: $light;
+
+  .about-section__content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    .about-section__header {
+      @include typography.headerThree;
+      margin-bottom: 1rem;
+    }
+    .about-section__text {
+      @include typography.paragraph;
+    }
+
+    .about-section-icons {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+      
+      .about-section-icons__icon {
+        width: 50px;
+      }
+    }
+
+    .about-section-button {
+      width: fit-content;
+      display: relative;
+      background-color: $nitro-blue;
+      .about-section-button__content {
+        width: 100%;
+        padding: 1.25rem 1.25rem;
+        background-color: transparent;
+        @include typography.button;
+        color: $light;
+        border: 2px solid $graphite;
+        transform: translate(-5px, -5px);
+      }
+    }
+  }
+
+  .about-section-image {
+    background-image: url("../assets/images/coldbrewbackground.png");
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+    .about-section-image__wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 4px solid $nitro-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translate(-20px, -20px);
+
+      .about-section-image__image {
+        height: 17.5rem;
+      }
+    }
+  }
+}
 
 /* ************************* */
 /*     DISCOUNT SECTION      */
