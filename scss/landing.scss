@@ -36,6 +36,8 @@
       display: relative;
       background-color: $nitro-blue;
       .hero-button__content {
+        z-index: 1;
+        cursor: pointer;
         width: 100%;
         padding: 1.25rem 1.25rem;
         background-color: transparent;
@@ -43,6 +45,9 @@
         color: $light;
         border: 2px solid $graphite;
         transform: translate(-5px, -5px);
+        &:active {
+          transform: translate(0px, 0px);
+        }
       }
     }
   }
@@ -102,7 +107,6 @@
   }
 }
 
-
 /* ************************* */
 /*      PRODUCT SECTION      */
 /* ************************* */
@@ -120,21 +124,25 @@
     text-align: center;
   }
 
-    .products-button {
-      width: fit-content;
-      display: relative;
-      background-color: $nitro-blue;
-      .products-button__content {
-        width: 100%;
-        padding: 1.25rem 1.25rem;
-        background-color: transparent;
-        @include typography.button;
-        color: $light;
-        border: 2px solid $graphite;
-        transform: translate(-5px, -5px);
+  .products-button {
+    width: fit-content;
+    display: relative;
+    background-color: $nitro-blue;
+    .products-button__content {
+      cursor: pointer;
+      z-index: 1;
+      width: 100%;
+      padding: 1.25rem 1.25rem;
+      background-color: transparent;
+      @include typography.button;
+      color: $light;
+      border: 2px solid $graphite;
+      transform: translate(-5px, -5px);
+      &:active {
+        transform: translate(0px, 0px);
       }
     }
-
+  }
 }
 
 /* ************************* */
@@ -167,7 +175,7 @@
       display: flex;
       justify-content: space-between;
       margin: 2rem 0;
-      
+
       .about-section-icons__icon {
         width: 50px;
       }
@@ -178,6 +186,8 @@
       display: relative;
       background-color: $nitro-blue;
       .about-section-button__content {
+        cursor: pointer;
+        z-index: 1;
         width: 100%;
         padding: 1.25rem 1.25rem;
         background-color: transparent;
@@ -185,6 +195,10 @@
         color: $light;
         border: 2px solid $graphite;
         transform: translate(-5px, -5px);
+
+        &:active {
+          transform: translate(0px, 0px);
+        }
       }
     }
   }
@@ -209,6 +223,19 @@
 
       .about-section-image__image {
         height: 17.5rem;
+
+        @keyframes rotate {
+          from {
+            rotate: (0deg);
+          }
+          to {
+            rotate: (360deg);
+          }
+        }
+
+        &:hover {
+          animation: rotate 2s linear infinite;
+        }
       }
     }
   }
@@ -231,6 +258,19 @@
     background-color: $graphite;
     padding: 1.25rem 0;
 
+    @keyframes flash-banner {
+      0% {
+        background-color: $graphite;
+      }
+      50% {
+        background-color: $nitro-blue;
+      }
+      100% {
+        background-color: $graphite;
+      }
+    }
+
+    animation: flash-banner 2.5s linear infinite;
     .discount-section__text {
       @include typography.headerThree;
       color: $light;
@@ -239,8 +279,6 @@
         font-style: normal;
         font-weight: $font-bold;
       }
-
     }
-
   }
 }
