@@ -1,0 +1,280 @@
+/* VARIABLES */
+/* ************************* */
+/*        BODY + HTML        */
+/* ************************* */
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ************************* */
+/*         VARIABLES         */
+/* ************************* */
+/* COLORS */
+/* FONT SIZES */
+/* FONT WEIGHTS */
+/* TYPOGRAPHY */
+/* VARIABLES */
+/* COMPONENTS */
+/* VARIABLES */
+/* TYPOGRAPHY */
+.navbar {
+  background-color: #FFF0ED;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.25rem;
+}
+.navbar .navbar__left {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__left .navbar__image {
+  margin: 0;
+}
+.navbar .navbar__left .navbar__logo {
+  width: 3.125rem;
+}
+.navbar .navbar__left .navbar__header {
+  margin: 0;
+  font-size: 2.06rem;
+  font-weight: 300;
+  color: #393939;
+  text-decoration: none;
+}
+.navbar .navbar__right .navbar__menu {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar .navbar__right .navbar__menu .navbar__item {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__right .navbar__menu .navbar__item .navbar__link {
+  font-size: 1.313rem;
+  font-weight: 400;
+  color: #393939;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar .navbar__right .navbar__menu .navbar__item .navbar__link--active {
+  color: #5BACC3;
+}
+
+/* ************************* */
+/*          FOOTER           */
+/* ************************* */
+.footer {
+  background-color: #FFF0ED;
+  text-align: center;
+}
+
+.footer__section {
+  display: inline-block;
+  margin: 1.25rem 2.5rem;
+  text-align: left;
+}
+
+.footer__heading {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2.063rem;
+  color: #393939;
+  text-transform: capitalize;
+}
+
+.footer__logo {
+  width: 3.125rem;
+}
+
+/* ************************* */
+/*          BUTTONS          */
+/* ************************* */
+.button {
+  display: block;
+  padding: none;
+  background-color: #5BACC3;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.313rem;
+  width: 11.25rem;
+  padding: 1.25rem;
+}
+
+.button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.313rem;
+  color: #ffffff;
+}
+
+/* ************************* */
+/*          HERO             */
+/* ************************* */
+.hero {
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 43.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393939;
+  width: 18.75rem;
+  height: 12.5rem;
+}
+.hero .hero__container .hero-container-outline {
+  position: absolute;
+  border: 5px solid #5BACC3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-20px, -20px);
+  z-index: 1;
+}
+.hero .hero__container .hero-container-outline .hero__header {
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: #393939;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+/* ************************* */
+/*        CATEGORIES         */
+/* ************************* */
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393939;
+  height: 5rem;
+}
+.categories .categories__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.categories .categories__list .categories__item {
+  list-style: none;
+  border-style: solid;
+  border-width: 0 0 0 0.25rem;
+  border-color: #5BACC3;
+  padding: 0 1.25rem;
+}
+.categories .categories__list .categories__item .categories__link {
+  font-size: 1.313rem;
+  font-weight: 400;
+  color: #393939;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* ************************* */
+/*        DRINK SECTIONS     */
+/* ************************* */
+.section {
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section .section__header {
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: #393939;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.section--nitro-pink {
+  background-color: #FFF0ED;
+}
+
+.section--light-gray {
+  background-color: #F7F7F7;
+}
+
+/* ************************* */
+/*          CARDS            */
+/* ************************* */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+  margin-top: 2.5rem;
+}
+.card .card__top {
+  display: flex;
+  justify-content: center;
+}
+.card .card__top .card__header {
+  font-size: 2.06rem;
+  font-weight: 300;
+  color: #393939;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0;
+  text-align: center;
+}
+.card .card__content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1.25rem 0;
+}
+.card .card__content .card__text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #393939;
+  text-decoration: none;
+  margin: 0;
+  font-style: italic;
+  text-align: center;
+}
+.card .card__bottom {
+  display: flex;
+  justify-content: center;
+}
+.card .card__bottom .card__text--nitro-blue {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #393939;
+  text-decoration: none;
+  margin: 0;
+  color: #5BACC3;
+  text-align: center;
+}
+
+/*# sourceMappingURL=menu.css.map */

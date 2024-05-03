@@ -1,0 +1,45 @@
+@use "./globals" as *;
+@use "./typography";
+
+.navbar {
+  background-color: $nitro-pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.25rem;
+
+  .navbar__left {
+    display: flex;
+    align-items: center;
+    .navbar__image {
+      margin: 0;
+    }
+    .navbar__logo {
+      width: 3.125rem;
+    }
+    .navbar__header {
+      margin: 0;
+      @include typography.navbarHeader;
+    }
+  }
+
+  .navbar__right {
+    .navbar__menu {
+      list-style: none;
+      display: flex;
+      gap: 2.5rem;
+      margin: 0;
+      padding: 0;
+      .navbar__item {
+        display: flex;
+        align-items: center;
+        .navbar__link {
+          @include typography.navbarLink;
+        }
+        .navbar__link--active {
+          color: $nitro-blue;
+        }
+      }
+    }
+  }
+}

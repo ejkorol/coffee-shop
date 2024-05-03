@@ -1,0 +1,179 @@
+/* VARIABLES */
+@use "./partials/globals" as *;
+
+/* TYPOGRAPHY */
+@use "./partials/typography";
+
+/* COMPONENTS */
+@use "./partials/navbar";
+@use "./partials/footer";
+@use "./partials/buttons";
+
+/* ************************* */
+/*           HERO            */
+/* ************************* */
+.hero {
+  background-color: $nitro-pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+
+  .hero__left {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    .hero__header {
+      @include typography.headerTwo;
+      text-transform: capitalize;
+    }
+    .hero__text {
+      @include typography.paragraph;
+      margin: 2rem 0;
+    }
+    .hero-button {
+      width: 11.25rem;
+      display: relative;
+      background-color: $nitro-blue;
+      .hero-button__content {
+        width: 100%;
+        padding: 1.25rem 1.25rem;
+        background-color: transparent;
+        @include typography.button;
+        color: $light;
+        border: 2px solid $graphite;
+        transform: translate(-5px, -5px);
+      }
+    }
+  }
+}
+
+/* ************************* */
+/*          CARDS            */
+/* ************************* */
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+  margin: 5rem 0 5rem 0;
+
+  .card {
+    background-color: $light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 27.5rem;
+    width: 20.625rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 5px 9px -1px #00000040;
+    border-radius: 0.625rem;
+
+    .card__top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.25rem;
+    }
+
+    .card__bottom {
+      padding: 1.25rem;
+      background-color: $nitro-pink;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .card-bottom-left {
+        padding: 0.5rem;
+        .card-bottom-left__header {
+          @include typography.headerThree;
+        }
+        .card-bottom-left__text {
+          @include typography.paragraph;
+        }
+      }
+      .card-bottom-right {
+        .card-bottom-right__text {
+          @include typography.paragraph;
+          color: $nitro-blue;
+        }
+      }
+    }
+  }
+}
+
+
+/* ************************* */
+/*      PRODUCT SECTION      */
+/* ************************* */
+.product-section {
+  background-color: $light-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.25rem 0;
+
+  .product-section__header {
+    @include typography.headerTwo;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+    .products-button {
+      width: 11.25rem;
+      display: relative;
+      background-color: $nitro-blue;
+      .products-button__content {
+        width: 100%;
+        padding: 1.25rem 1.25rem;
+        background-color: transparent;
+        @include typography.button;
+        color: $light;
+        border: 2px solid $graphite;
+        transform: translate(-5px, -5px);
+      }
+    }
+
+}
+
+/* ************************* */
+/*      ABOUT SECTION        */
+/* ************************* */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ************************* */
+/*     DISCOUNT SECTION      */
+/* ************************* */
+.discount-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+
+  .discount-section-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: $graphite;
+    padding: 1.25rem 0;
+
+    .discount-section__text {
+      @include typography.headerThree;
+      color: $light;
+
+      .discount-section__code {
+        font-style: normal;
+        font-weight: $font-bold;
+      }
+
+    }
+
+  }
+}
