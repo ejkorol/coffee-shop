@@ -1,25 +1,55 @@
-/* ************************* */
-/*          FOOTER           */
-/* ************************* */
+@use "./globals" as *;
+@use "./typography";
+
 .footer {
-  background-color: #FFF0ED;
-  text-align: center;
-}
+  height: 14rem;
+  background-color: $nitro-pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+  position: relative;
+  .footer__image--left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50px);
 
-.footer__section {
-  display: inline-block;
-  margin: 1.25rem 2.5rem;
-  text-align: left;
-}
+  .footer__image {
+    width: 120px;
+    opacity: 0.25;
+    z-index: -1;
+  }
+  }
+  .footer__image--right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(50px);
 
-.footer__heading {
-  font-family: 'Open Sans';
-  font-weight: 300;
-  font-size: 2.063rem;
-  color: #393939;
-  text-transform: capitalize;
-}
+  .footer__image {
+    width: 120px;
+    opacity: 0.25;
+    z-index: -1;
+  }
+  }
+  .footer_section {
+    display: inline-block;
+    margin: 1.25rem 1.25rem;
+  }
 
-.footer__logo {
-  width: 3.125rem;
+    .footer__logo {
+      width: 50px;
+    }
+    .footer__header {
+      @include typography.headerThree;
+      margin-bottom: 1.25rem;
+    }
+  .footer__text {
+    @include typography.paragraph;
+  }
+  .footer__text--bold {
+    font-weight: $font-bold;
+  }
+
 }
