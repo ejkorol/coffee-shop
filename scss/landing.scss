@@ -239,6 +239,19 @@
     background-color: $graphite;
     padding: 1.25rem 0;
 
+    @keyframes flash-banner {
+      0% {
+        background-color: $graphite;
+      }
+      50% {
+        background-color: $nitro-blue;
+      }
+      100% {
+        background-color: $graphite;
+      }
+    }
+
+    animation: flash-banner 2.5s linear infinite;
     .discount-section__text {
       @include typography.headerThree;
       color: $light;
