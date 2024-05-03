@@ -129,9 +129,8 @@
     display: relative;
     background-color: $nitro-blue;
     .products-button__content {
-
       cursor: pointer;
-        z-index: 1;
+      z-index: 1;
       width: 100%;
       padding: 1.25rem 1.25rem;
       background-color: transparent;
@@ -139,9 +138,9 @@
       color: $light;
       border: 2px solid $graphite;
       transform: translate(-5px, -5px);
-        &:active {
-          transform: translate(0px, 0px);
-        }
+      &:active {
+        transform: translate(0px, 0px);
+      }
     }
   }
 }
@@ -184,7 +183,6 @@
       display: relative;
       background-color: $nitro-blue;
       .about-section-button__content {
-
         cursor: pointer;
         z-index: 1;
         width: 100%;
