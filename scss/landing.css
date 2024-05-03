@@ -193,6 +193,8 @@ body {
   background-color: #5BACC3;
 }
 .hero .hero__left .hero-button .hero-button__content {
+  z-index: 1;
+  cursor: pointer;
   width: 100%;
   padding: 1.25rem 1.25rem;
   background-color: transparent;
@@ -204,6 +206,9 @@ body {
   color: #FFFFFF;
   border: 2px solid #393939;
   transform: translate(-5px, -5px);
+}
+.hero .hero__left .hero-button .hero-button__content:active {
+  transform: translate(0px, 0px);
 }
 
 /* ************************* */
@@ -294,6 +299,8 @@ body {
   background-color: #5BACC3;
 }
 .product-section .products-button .products-button__content {
+  cursor: pointer;
+  z-index: 1;
   width: 100%;
   padding: 1.25rem 1.25rem;
   background-color: transparent;
@@ -305,6 +312,9 @@ body {
   color: #FFFFFF;
   border: 2px solid #393939;
   transform: translate(-5px, -5px);
+}
+.product-section .products-button .products-button__content:active {
+  transform: translate(0px, 0px);
 }
 
 /* ************************* */
@@ -355,6 +365,8 @@ body {
   background-color: #5BACC3;
 }
 .about-section .about-section__content .about-section-button .about-section-button__content {
+  cursor: pointer;
+  z-index: 1;
   width: 100%;
   padding: 1.25rem 1.25rem;
   background-color: transparent;
@@ -366,6 +378,9 @@ body {
   color: #FFFFFF;
   border: 2px solid #393939;
   transform: translate(-5px, -5px);
+}
+.about-section .about-section__content .about-section-button .about-section-button__content:active {
+  transform: translate(0px, 0px);
 }
 .about-section .about-section-image {
   background-image: url("../assets/images/coldbrewbackground.png");
@@ -388,6 +403,17 @@ body {
 .about-section .about-section-image .about-section-image__wrapper .about-section-image__image {
   height: 17.5rem;
 }
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+.about-section .about-section-image .about-section-image__wrapper .about-section-image__image:hover {
+  animation: rotate 2s linear infinite;
+}
 
 /* ************************* */
 /*     DISCOUNT SECTION      */
@@ -405,6 +431,18 @@ body {
   width: 90%;
   background-color: #393939;
   padding: 1.25rem 0;
+  animation: flash-banner 2.5s linear infinite;
+}
+@keyframes flash-banner {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: #393939;
+  }
 }
 .discount-section .discount-section-banner .discount-section__text {
   font-size: 2.06rem;
