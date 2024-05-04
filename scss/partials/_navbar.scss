@@ -17,7 +17,7 @@
   }
   &__header {
     margin: 0;
-    @include typography.navbarHeader;
+    @include typography.typeface($heading-three, $font-light, $graphite, none, 0, uppercase);
   }
 
   &__menu {
@@ -32,7 +32,7 @@
     align-items: center;
   }
   &__link {
-    @include typography.navbarLink;
+    @include typography.typeface($interactive, $font-regular, $graphite, none, 0, uppercase);
   }
   &__link--active {
     color: $nitro-blue;
