@@ -4,86 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./scss/landing.css" />
 
     <title>Coffee Shop - Home</title>
   </head>
 
   <body>
+
     <!-- NAVBAR -->
     <header class="header">
       <nav class="navbar">
         <div class="navbar__left">
-          <figure class="navbar__image">
-            <img
-              class="navbar__logo"
-              src="../assets/logos/coffee-beans-logo-and-footer.svg"
-              alt="coffee beans"
-            />
-          </figure>
+          <img class="navbar__logo" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee beans"/>
           <h2 class="navbar__header">nitro</h2>
         </div>
 
         <div class="navbar__right">
           <ul class="navbar__menu">
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">about</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">menu</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link navbar__link--active" href="#">shop now</a>
-            </li>
+            <li class="navbar__item"><a class="navbar__link" href="#">about</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">menu</a></li>
+            <li class="navbar__item"><a class="navbar__link navbar__link--active" href="#">shop now</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main>
+
+
+      <!-- HERO -->
       <section class="hero">
         <div class="hero__left">
           <h1 class="hero__header">nitro coffee</h1>
-          <p class="hero__text">
-            Coffee is a brewed drink prepared from roasted coffee beans, the
-            seeds of berries from certain Coffea species.
-          </p>
+          <p class="hero__text">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
           <div class="hero-button">
             <button class="hero-button__content">shop now</button>
           </div>
         </div>
+
         <div class="hero__right">
-          <figure>
-            <img
-              class="hero__image"
-              src="./assets/images/coffeebeans-hero.png"
-              alt="coffee bag hero"
-            />
-          </figure>
+          <img class="hero__image" src="./assets/images/coffeebeans-hero.png" alt="coffee bag hero" />
         </div>
       </section>
 
       <!-- PRODUCTS -->
       <section class="product-section">
         <h2 class="product-section__header">our products</h2>
-
         <section class="cards">
+
           <article class="card">
             <div class="card__top">
-              <img
-                class="card__image"
-                src="./assets/images/coffeebeans.png"
-                alt="coffee beans"
-              />
+              <img class="card__image" src="./assets/images/coffeebeans.png" alt="coffee beans" />
             </div>
             <div class="card__bottom">
               <div class="card-bottom-left">
-              <h3 class="card-bottom-left__header">coffee beans</h3>
-              <p class="card-bottom-left__text">Pack of 3</p>
+                <h3 class="card-bottom-left__header">coffee beans</h3>
+                <p class="card-bottom-left__text">Pack of 3</p>
               </div>
               <div class="card-bottom-right">
                 <p class="card-bottom-right__text">$19</p>
@@ -93,38 +70,30 @@
 
           <article class="card">
             <div class="card__top">
-              <img
-                class="card__image"
-                src="./assets/images/coldbrew.png"
-                alt="cold brew"
-              />
+              <img class="card__image" src="./assets/images/coldbrew.png" alt="cold brew" />
             </div>
             <div class="card__bottom">
-              <div class="card-bottom-left">
-              <h3 class="card-bottom-left__header">cold brew</h3>
-              <p class="card-bottom-left__text">1 can</p>
-              </div>
-              <div class="card-bottom-right">
-              <p class="card-bottom-right__text">$5</p>
-              </div>
+                <div class="card-bottom-left">
+                  <h3 class="card-bottom-left__header">cold brew</h3>
+                  <p class="card-bottom-left__text">1 can</p>
+                </div>
+                <div class="card-bottom-right">
+                  <p class="card-bottom-right__text">$5</p>
+                </div>
             </div>
           </article>
 
           <article class="card">
             <div class="card__top">
-              <img
-                class="card__image"
-                src="./assets/images/inhousebrew.png"
-                alt="in-house brew"
-              />
+              <img class="card__image" src="./assets/images/inhousebrew.png" alt="in-house brew" />
             </div>
             <div class="card__bottom">
               <div class="card-bottom-left">
-              <h3 class="card-bottom-left__header">in-house brew</h3>
-              <p class="card-bottom-left__text">1 cup</p>
+                <h3 class="card-bottom-left__header">in-house brew</h3>
+                <p class="card-bottom-left__text">1 cup</p>
               </div>
               <div class="card-bottom-right">
-              <p class="card-bottom-right__text">$3</p>
+                <p class="card-bottom-right__text">$3</p>
               </div>
             </div>
           </article>
@@ -133,24 +102,22 @@
           <div class="products-button">
             <button class="products-button__content">view all</button>
           </div>
-
       </section>
 
       <!-- ABOUT SECTION -->
       <section class="about-section">
         <div class="about-section__content">
-          <h3 class="about-section__header">we're different</h3>
-          <p class="about-section__text">We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence</p>
+            <h3 class="about-section__header">we're different</h3>
+            <p class="about-section__text">We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence</p>
           <div class="about-section-icons">
-              <img class="about-section-icons__icon" src="./assets/logos/planting.svg" alt="planting coffee beans"/>
-              <img class="about-section-icons__icon" src="./assets/logos/coffee-beans.svg" alt="coffee beans"/>
-              <img class="about-section-icons__icon" src="./assets/logos/coffee-cup.svg" alt="coffee cup"/>
+            <img class="about-section-icons__icon" src="./assets/logos/planting.svg" alt="planting coffee beans"/>
+            <img class="about-section-icons__icon" src="./assets/logos/coffee-beans.svg" alt="coffee beans"/>
+            <img class="about-section-icons__icon" src="./assets/logos/coffee-cup.svg" alt="coffee cup"/>
           </div>
 
           <div class="about-section-button">
             <button class="about-section-button__content">learn more</button>
           </div>
-
         </div>
 
         <div class="about-section-image">
@@ -162,14 +129,11 @@
 
       <!-- DISCOUNT -->
       <section class="discount-section">
-
         <div class="discount-section-banner">
-        <p class="discount-section__text">
-          Get 20% off your first order with code:
-          <em class="discount-section__code">FirstNitro</em>
-        </p>
+        <p class="discount-section__text">Get 20% off your first order with code: <em class="discount-section__code">FirstNitro</em></p>
         </div>
       </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -191,28 +155,22 @@
 
       <section class="footer__section">
         <h3 class="footer__header">social</h3>
-        <a href="https://www.facebook.com"
-          ><img
-            class="footer__logo"
-            src="./assets/logos/Facebook-Icon.svg"
-            alt="facebook"
-        /></a>
-        <a href="https://www.yelp.com"
-          ><img
-            class="footer__logo"
-            src="./assets/logos/Yelp-Icon.svg"
-            alt="yelp"
-        /></a>
-        <a href="https://www.instagram.com"
-          ><img
-            class="footer__logo"
-            src="./assets/logos/Instagram-Icon.svg"
-            alt="instagram"
-        /></a>
+        <a href="https://www.facebook.com">
+          <img class="footer__logo" src="./assets/logos/Facebook-Icon.svg" alt="facebook" />
+        </a>
+        <a href="https://www.yelp.com">
+          <img class="footer__logo" src="./assets/logos/Yelp-Icon.svg" alt="yelp" />
+        </a>
+        <a href="https://www.instagram.com">
+          <img class="footer__logo" src="./assets/logos/Instagram-Icon.svg" alt="instagram" />
+        </a>
       </section>
+
       <div class="footer__image--right">
         <img class="footer__image" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee beans"/>
       </div>
     </footer>
+
   </body>
+
 </html>
