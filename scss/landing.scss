@@ -41,7 +41,7 @@
       $graphite,
       none,
       0,
-      capitalize
+      none
     );
     margin: 2rem 0;
   }
@@ -112,7 +112,7 @@
         padding: 0.5rem;
         &__header {
           @include typography.typeface(
-            $heading-three,
+            1.8rem,
             $font-light,
             $graphite,
             none,
@@ -124,18 +124,18 @@
           @include typography.typeface(
             $paragraph,
             $font-regular,
-            $graphite,
+            $gray,
             none,
             0,
-            capitalize
+            none
           );
         }
       }
       .card-bottom-right {
         &__text {
           @include typography.typeface(
-            $paragraph,
-            $font-regular,
+            $heading-three,
+            $font-bold,
             $graphite,
             none,
             0,
@@ -228,7 +228,7 @@
       $graphite,
       none,
       0,
-      capitalize
+      none
     );
   }
   &__content {
@@ -258,7 +258,7 @@
         background-color: transparent;
         @include typography.typeface(
           $interactive,
-          $font-light,
+          $font-regular,
           $graphite,
           none,
           0,
