@@ -44,7 +44,14 @@
   }
 
   &__header {
-    @include typography.typeface($heading-one, $font-light, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $heading-one,
+      $font-light,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     color: $light;
   }
 }
@@ -74,7 +81,14 @@
   }
 
   &__link {
-    @include typography.typeface($interactive, $font-regular, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $interactive,
+      $font-regular,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     color: $light;
     text-decoration: none;
     text-transform: uppercase;
@@ -92,7 +106,14 @@
   align-items: center;
 
   &__header {
-    @include typography.typeface($heading-one, $font-light, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $heading-one,
+      $font-light,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     text-transform: capitalize;
   }
 
@@ -120,7 +141,14 @@
   }
 
   &__header {
-    @include typography.typeface($heading-three, $font-light, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $heading-three,
+      $font-light,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     text-align: center;
   }
   &__content {
@@ -131,7 +159,14 @@
   }
 
   &__text {
-    @include typography.typeface($paragraph, $font-regular, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $paragraph,
+      $font-regular,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     font-style: italic;
     text-align: center;
   }
@@ -142,7 +177,14 @@
   }
 
   &__text--nitro-blue {
-    @include typography.typeface($paragraph, $font-regular, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $paragraph,
+      $font-regular,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     color: $nitro-blue;
     text-align: center;
   }
