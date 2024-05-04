@@ -24,11 +24,25 @@
     width: 33%;
   }
   &__header {
-    @include typography.typeface($heading-one, $font-light, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $heading-one,
+      $font-light,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     text-transform: capitalize;
   }
   &__text {
-    @include typography.typeface($paragraph, $font-regular, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $paragraph,
+      $font-regular,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     margin: 2rem 0;
   }
   .hero-button {
@@ -41,7 +55,14 @@
       width: 100%;
       padding: 1.25rem 1.25rem;
       background-color: transparent;
-      @include typography.typeface($interactive, $font-regular, $graphite, none, 0, uppercase);
+      @include typography.typeface(
+        $interactive,
+        $font-regular,
+        $graphite,
+        none,
+        0,
+        uppercase
+      );
       color: $light;
       border: 2px solid $graphite;
       transform: translate(-5px, -5px);
@@ -90,15 +111,36 @@
       .card-bottom-left {
         padding: 0.5rem;
         &__header {
-          @include typography.typeface($heading-three, $font-light, $graphite, none, 0, capitalize);
+          @include typography.typeface(
+            $heading-three,
+            $font-light,
+            $graphite,
+            none,
+            0,
+            capitalize
+          );
         }
         &__text {
-    @include typography.typeface($paragraph, $font-regular, $graphite, none, 0, capitalize);
+          @include typography.typeface(
+            $paragraph,
+            $font-regular,
+            $graphite,
+            none,
+            0,
+            capitalize
+          );
         }
       }
       .card-bottom-right {
         &__text {
-    @include typography.typeface($paragraph, $font-regular, $graphite, none, 0, capitalize);
+          @include typography.typeface(
+            $paragraph,
+            $font-regular,
+            $graphite,
+            none,
+            0,
+            capitalize
+          );
           color: $nitro-blue;
         }
       }
@@ -118,7 +160,14 @@
   padding: 2.25rem 0;
 
   &__header {
-    @include typography.typeface($heading-two, $font-light, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $heading-two,
+      $font-light,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     text-transform: capitalize;
     text-align: center;
   }
@@ -133,7 +182,14 @@
       width: 100%;
       padding: 1.25rem 1.25rem;
       background-color: transparent;
-      @include typography.typeface($interactive, $font-light, $graphite, none, 0, uppercase);
+      @include typography.typeface(
+        $interactive,
+        $font-light,
+        $graphite,
+        none,
+        0,
+        uppercase
+      );
       color: $light;
       border: 2px solid $graphite;
       transform: translate(-5px, -5px);
@@ -155,11 +211,25 @@
   background-color: $light;
 
   &__header {
-    @include typography.typeface($heading-three, $font-light, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $heading-three,
+      $font-light,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     margin-bottom: 1rem;
   }
   &__text {
-    @include typography.typeface($paragraph, $font-regular, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $paragraph,
+      $font-regular,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
   }
   &__content {
     display: flex;
@@ -186,7 +256,14 @@
         width: 100%;
         padding: 1.25rem 1.25rem;
         background-color: transparent;
-        @include typography.typeface($interactive, $font-light, $graphite, none, 0, uppercase);
+        @include typography.typeface(
+          $interactive,
+          $font-light,
+          $graphite,
+          none,
+          0,
+          uppercase
+        );
         color: $light;
         border: 2px solid $graphite;
         transform: translate(-5px, -5px);
@@ -215,22 +292,22 @@
       justify-content: center;
       align-items: center;
       transform: translate(-20px, -20px);
+    }
 
-      &__image {
-        height: 17.5rem;
+    &__image {
+      height: 17.5rem;
 
-        @keyframes rotate {
-          from {
-            rotate: (0deg);
-          }
-          to {
-            rotate: (360deg);
-          }
+      @keyframes rotate {
+        from {
+          rotate: (0deg);
         }
-
-        &:hover {
-          animation: rotate 2s linear infinite;
+        to {
+          rotate: (360deg);
         }
+      }
+
+      &:hover {
+        animation: rotate 2s linear infinite;
       }
     }
   }
@@ -268,7 +345,14 @@
   }
 
   &__text {
-    @include typography.typeface($heading-three, $font-light, $graphite, none, 0, capitalize);
+    @include typography.typeface(
+      $heading-three,
+      $font-light,
+      $graphite,
+      none,
+      0,
+      capitalize
+    );
     color: $light;
 
     &__code {
