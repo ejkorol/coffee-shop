@@ -16,7 +16,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 43.75rem;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +27,8 @@
     justify-content: center;
     align-items: center;
     background-color: $graphite;
-    width: 18.75rem;
-    height: 12.5rem;
+    width: 300px;
+    height: 200px;
 
     .hero-container-outline {
       position: absolute;
@@ -64,7 +64,7 @@
   justify-content: center;
   align-items: center;
   background-color: $graphite;
-  height: 5rem;
+  height: 64px;
 
   &__list {
     display: flex;
@@ -75,7 +75,7 @@
   &__item {
     list-style: none;
     border-style: solid;
-    border-width: 0 0 0 0.25rem;
+    border-width: 0 0 0 4px;
     border-color: $nitro-blue;
     padding: 0 1.25rem;
   }
@@ -133,7 +133,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 33%;
-  margin-top: 2.5rem;
+  margin-top: 40px;
 
   &__top {
     display: flex;
@@ -165,7 +165,7 @@
       $graphite,
       none,
       0,
-      capitalize
+      none
     );
     font-style: italic;
     text-align: center;

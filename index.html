@@ -22,9 +22,9 @@
 
         <div class="navbar__right">
           <ul class="navbar__menu">
-            <li class="navbar__item"><a class="navbar__link" href="#">about</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">menu</a></li>
-            <li class="navbar__item"><a class="navbar__link navbar__link--active" href="#">shop now</a></li>
+            <li class="navbar__item"><a class="navbar__link navbar__link--active" href="./index.html">about</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/menu.html">menu</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="./pages/menu.html">shop now</a></li>
           </ul>
         </div>
       </nav>
@@ -39,7 +39,9 @@
           <h1 class="hero__header">nitro coffee</h1>
           <p class="hero__text">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
           <div class="hero-button">
-            <button class="hero-button__content">shop now</button>
+            <a href="./pages/menu.html">
+              <button class="hero-button__content">shop now</button>
+            </a>
           </div>
         </div>
 
@@ -100,12 +102,14 @@
         </section>
 
           <div class="products-button">
-            <button class="products-button__content">view all</button>
+            <a href="./pages/menu.html">
+              <button class="products-button__content">view all</button>
+            </a>
           </div>
       </section>
 
       <!-- ABOUT SECTION -->
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="about-section__content">
             <h3 class="about-section__header">we're different</h3>
             <p class="about-section__text">We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence</p>
