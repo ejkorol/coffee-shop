@@ -8,38 +8,47 @@
   align-items: center;
   padding: 2.5rem 1.25rem;
 
-  .navbar__left {
+  &__left {
     display: flex;
     align-items: center;
-    .navbar__image {
-      margin: 0;
-    }
-    .navbar__logo {
-      width: 3.125rem;
-    }
-    .navbar__header {
-      margin: 0;
-      @include typography.navbarHeader;
-    }
+  }
+  &__logo {
+    width: 3.125rem;
+  }
+  &__header {
+    margin: 0;
+    @include typography.typeface(
+      $heading-three,
+      $font-light,
+      $graphite,
+      none,
+      0,
+      uppercase
+    );
   }
 
-  .navbar__right {
-    .navbar__menu {
-      list-style: none;
-      display: flex;
-      gap: 2.5rem;
-      margin: 0;
-      padding: 0;
-      .navbar__item {
-        display: flex;
-        align-items: center;
-        .navbar__link {
-          @include typography.navbarLink;
-        }
-        .navbar__link--active {
-          color: $nitro-blue;
-        }
-      }
-    }
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    @include typography.typeface(
+      $interactive,
+      $font-regular,
+      $graphite,
+      none,
+      0,
+      uppercase
+    );
+  }
+  &__link--active {
+    color: $nitro-blue;
   }
 }
